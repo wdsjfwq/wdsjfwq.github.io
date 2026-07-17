@@ -147,7 +147,7 @@
             list.innerHTML = Array.from({length: 6}, SkeletonCard).join('');
             container.appendChild(list);
             
-            fetch('https://list.mczfw.com/api')
+            fetch('https://list.mczfw.com/wdapi/生存')
                 .then(res => {
                     if (!res.ok) throw new Error('网络响应不正常');
                     return res.json();
